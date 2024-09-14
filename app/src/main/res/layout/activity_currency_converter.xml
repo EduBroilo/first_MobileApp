@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/converter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrencyConverterActivity">
+
+    <!-- Título da Janela. -->
+    <TextView
+        android:id="@+id/Titulo_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/calistoga"
+        android:text="@string/Titulo_Converter"
+        android:textColor="@color/purple7930E4"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo BRL. -->
+
+    <TextView
+        android:id="@+id/campo_BRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BRL_currency"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <EditText
+        android:id="@+id/edit_BRL"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:hint="@string/BRL_currency"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_BRL" />
+
+    <!-- Campo USD. -->
+
+    <TextView
+        android:id="@+id/campo_USD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/USD_currency"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_BRL" />
+
+    <EditText
+        android:id="@+id/edit_USD"
+        android:layout_width="412dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/USD_currency"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_USD" />
+
+    <!-- Botão Converter. -->
+    <Button
+        android:id="@+id/button_Converter"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp"
+        android:color="@color/purple7930E4"
+        android:text="@string/Converter"
+        android:background="@drawable/button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_USD" />
+
+    <!-- Botão Inverter. -->
+    <!--
+    <Button
+        android:id="@+id/button_Inverter"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:color="@color/purple7930E4"
+        android:text="@string/Inverter"
+        android:background="@drawable/button_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Converter" /> -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

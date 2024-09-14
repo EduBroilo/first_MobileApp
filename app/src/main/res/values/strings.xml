@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mobile Experiment</string>
+    <string name="LoginTitle">Login</string>
+    <string name="WelcomeTitle">Bem-Vindo!</string>
+    <string name="Titulo_Cadastro">Cadastro</string>
+    <string name="Campo_Nome_Cadastro">Nome</string>
+    <string name="Edit_Nome_Cadastro">Nome</string>
+    <string name="Campo_Email_Cadastro">E-mail</string>
+    <string name="hint_edit_nome_cadastro">Digite seu Nome</string>
+    <string name="hint_edit_email_cadastro">Digite seu Email</string>
+    <string name="Campo_Senha_Cadastro">Senha</string>
+    <string name="hint_edit_senha_cadastro">Digite sua Senha</string>
+    <string name="Campo_ConfirmeSenha_Cadastro">Confirmar Senha</string>
+    <string name="hint_edit_confirmesenha_cadastro">Confirme sua Senha</string>
+    <string name="button_salvar">Salvar</string>
+    <string name="button_cancelar">Cancelar</string>
+    <string name="Titulo_Login">Login</string>
+    <string name="Titulo_Converter">Converter</string>
+    <string name="Entrar">Entrar</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="BRL_currency">BRL</string>
+    <string name="USD_currency">USD</string>
+    <string name="Converter">Converter</string>
+    <string name="Inverter">Inverter</string>
+</resources>

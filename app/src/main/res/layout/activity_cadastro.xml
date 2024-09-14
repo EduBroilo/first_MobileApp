@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroActivity">
+
+    <!-- Título da Janela. -->
+    <TextView
+        android:id="@+id/Titulo_Cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/calistoga"
+        android:text="@string/Titulo_Cadastro"
+        android:textColor="@color/purple7930E4"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo Nome. -->
+    <TextView
+        android:id="@+id/Campo_Nome_Cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Campo_Nome_Cadastro"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <EditText
+        android:id="@+id/edit_nome_cadastro"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:hint="@string/hint_edit_nome_cadastro"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Campo_Nome_Cadastro"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Campo Email. -->
+    <TextView
+        android:id="@+id/campo_email_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/Campo_Email_Cadastro"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome_cadastro" />
+
+    <EditText
+        android:id="@+id/edit_email_cadastro"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:hint="@string/hint_edit_email_cadastro"
+        android:autofillHints="emailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_email_cadastro" />
+
+    <!-- Campo Senha. -->
+    <TextView
+        android:id="@+id/campo_senha_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/Campo_Senha_Cadastro"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_cadastro" />
+
+    <EditText
+        android:id="@+id/edit_senha_cadastro"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:hint="@string/hint_edit_senha_cadastro"
+        android:autofillHints="password"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_senha_cadastro" />
+
+    <!-- Campo Confirmar Senha. -->
+    <TextView
+        android:id="@+id/campo_confirmesenha_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/Campo_ConfirmeSenha_Cadastro"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha_cadastro" />
+
+    <EditText
+        android:id="@+id/edit_confirmesenha_cadastro"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:hint="@string/hint_edit_confirmesenha_cadastro"
+        android:autofillHints="password"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_confirmesenha_cadastro" />
+
+    <!-- Botão Salvar. -->
+    <Button
+        android:id="@+id/Salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
+        android:color="@color/purple7930E4"
+        android:text="@string/button_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_confirmesenha_cadastro" />
+
+    <!-- Botão Cancelar. -->
+    <Button
+        android:id="@+id/Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:color="@color/purple7930E4"
+        android:text="@string/button_cancelar"
+        app:layout_constraintEnd_toStartOf="@+id/Salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_confirmesenha_cadastro" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
