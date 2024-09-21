@@ -29,7 +29,7 @@ public class CurrencyConverterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String input = inputNumber.getText().toString();
 
-                // TODO: Get value by API
+                // TO-DO: Get value by API
                 double USD_value = 5.57;
 
                 if (!TextUtils.isEmpty(input)) {
